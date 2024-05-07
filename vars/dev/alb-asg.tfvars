@@ -3,7 +3,7 @@ region = "us-west-2"
 # alb
 internal          = false
 loadbalancer_type = "application"
-alb_subnets       = ["subnet-058a7514ba8adbb07", "subnet-0dbcd1ac168414927", "subnet-032f5077729435858"]
+alb_subnets       = ["subnet-07ccf451b2b1829d1", "subnet-069afbdda19a2b961", "subnet-003ae8213775fe494"]
 
 #alb-sg
 alb_ingress_cidr_from_port = [80]
@@ -73,10 +73,10 @@ listener_type     = "forward"
 
 #launch_template
 ami_id        = "ami-020f3ca563c92097b"
-instance_type = "t2.medium"
+instance_type = "t2.micro"
 key_name      = "techiescamp"
-vpc_id        = "vpc-0a5ca4a92c2e10163"
-asg_subnets   = ["subnet-058a7514ba8adbb07", "subnet-0dbcd1ac168414927", "subnet-032f5077729435858"]
+vpc_id        = "vpc-0b9ef2701fe8b9206"
+asg_subnets   = ["subnet-07ccf451b2b1829d1", "subnet-069afbdda19a2b961", "subnet-003ae8213775fe494"]
 public_access = true
 
 #user_data
